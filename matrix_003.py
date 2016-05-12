@@ -13,10 +13,10 @@ print "[rien a faire] Le reste d'une division 11 par 4 = ", 11 % 4
 
 ################ YOUR CODE HERE ###############
 
-# div_12_par_4   = 
-# div_13_par_4   = 
-# div_14p5_par_4 =
-# reste_div_11_par_4 = 
+div_12_par_4   = 12/4
+div_13_par_4   = 12/4
+div_14p5_par_4 =14.5/4
+reste_div_11_par_4 = 11%4
 
 ############### END OF YOUR CODE ##############
 print "Le resultat d'une division 12 par 4   = ", div_12_par_4
