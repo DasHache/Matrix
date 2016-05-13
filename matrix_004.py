@@ -1,8 +1,8 @@
 # Les bases du python / math
 
 # 1. La verite? Le type qui s'appele Boolean = True ou False
-bool_5_gt_3 = False # Trouvez le resultat d'une operation: 5 plus que 3 (op: >)
-bool_4_lt_2 = False # Trouvez le resultat d...             4 mois que 2 (op: <)
+bool_5_gt_3 = False # Trouvez le resultat d'une operation: 5 plus grand  que 3 (op: >)
+bool_4_lt_2 = False # Trouvez le resultat d...             4 plus petit que 2 (op: <)
 bool_7_eg_6 = False # Trouvez le resultat d...             7 egal a 6   (op: ==)
 bool_7_ne_6 = False # Trouvez le resultat d...             7 n'est pas egal a 6   (op: !=)
 bool_5_ge_5 = False # Trouvez le resultat d...             5 plus que ou egal a 5 (op: >=)
@@ -13,12 +13,12 @@ print "Reponse de '12345 est div par 3' est: ", (12345 % 3) == 0
 
 ################ YOUR CODE HERE ###############
 
-bool_5_gt_3 = False
-bool_4_lt_2 = False
-bool_7_eg_6 = False
-bool_7_ne_6 = False
-bool_5_ge_5 = False
-bool_4_le_4 = False
+bool_5_gt_3 = 5>3
+bool_4_lt_2 = 4<2
+bool_7_eg_6 = 7==6
+bool_7_ne_6 = 7!=6
+bool_5_ge_5 = 5>=5
+bool_4_le_4 = 4<=4
 
 ############### END OF YOUR CODE ##############
 
