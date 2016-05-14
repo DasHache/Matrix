@@ -34,11 +34,11 @@ s3_carres = {}
 
 ################ YOUR CODE HERE ###############
 
-# s_len = 0
-# s2 = {}
-# s2_somme = 0
-# s3 = {}
-# s3_carres = {}
+s_len = len(s)
+s2 = {1,2,3,4}
+s2_somme = sum(s2)
+s3 = range(6)
+s3_carres = {0*0, 1*1, 2*2, 3*3, 4*4, 5*5}
 
 ############### END OF YOUR CODE ##############
 
