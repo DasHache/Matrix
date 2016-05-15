@@ -46,10 +46,10 @@ s_mult_xy_lt15 = {}
 
 ################ YOUR CODE HERE ###############
 
-s_impairs = {}
-s_abcxyz = {}
-s_mult_xy = {}
-s_mult_xy_lt15 = {}
+s_impairs = {x for x in s if (x%2!= 0)}
+s_abcxyz = {x+y for x in {'a','b','c'} for y in {'x','y','z'}}
+s_mult_xy = {x*y for x in {1,2,3,4} for y in {5,6,7}}
+s_mult_xy_lt15 ={x*y for x in {1,2,3,4} for y in {5,6,7} if x*y <=15}
 
 ############### END OF YOUR CODE ##############
 
