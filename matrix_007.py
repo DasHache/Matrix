@@ -14,15 +14,15 @@ print "Une liste des liste   : ", [ [1,2,3,4], ['a','b','c','d'] ]
 # Tu NE PEUX PAS faire pareil avec les sets, essai la suivante:
 # { {1,2,3}, {'a','b','c'} }
 # Cree une liste qui contient 3 listes (a ton choix):
-liste_a_ton_choix = []  # <------------------------------- YOUR CODE HERE
+liste_a_ton_choix = [ [1,2,3],['a','d','r'],[6,6,7] ]  # <------------------------------- YOUR CODE HERE
 print '\n*** 1. Une liste des listes: ', liste_a_ton_choix
 
 # 2. (~2')
 # Les fonctions comme 'len' et 'sum' marchent aussi:
 # Trouve la longeur de la liste l1 et la somme des elements
 l1 = [1,2,3,4,5]
-l_len = 0 # <------------------------------- YOUR CODE HERE
-l_som = 0  # <------------------------------- YOUR CODE HERE
+l_len = len(l1) # <------------------------------- YOUR CODE HERE
+l_som = sum(l1)  # <------------------------------- YOUR CODE HERE
 print '\n*** 2.1 La longeur: ', l_len
 print '\n*** 2.2 La somme:   ', l_som
 
@@ -31,7 +31,7 @@ print '\n*** 2.2 La somme:   ', l_som
 l2 = [1,2,3,4]
 l3 = [10,20,30,40]
 # Cree une liste qui contient tous les elements des l2 et l3
-l2_plus_l3 = []  # <------------------------------- YOUR CODE HERE
+l2_plus_l3 = [l2+l3]  # <------------------------------- YOUR CODE HERE
 print '\n*** 3. Une somme de deux listes: ', l2_plus_l3
 
 # 4. (~10')
@@ -42,13 +42,12 @@ print l_15[1],    ' - est le deuxieme element de la liste'
 a = 5
 b = 9
 # Essai le code et remplace les dots par tes explications
-print l_15[a],    ' - est ...............................' # <------------------------------- YOUR CODE HERE
-print l_15[a:b],  ' - est ...............................' # <------------------------------- YOUR CODE HERE
-print l_15[:b],   ' - est ...............................' # <------------------------------- YOUR CODE HERE
-print l_15[b:],   ' - est ...............................' # <------------------------------- YOUR CODE HERE
-print l_15[::3],  ' - est ...............................' # <------------------------------- YOUR CODE HERE
-print l_15[::3],  ' - est ...............................' # <------------------------------- YOUR CODE HERE
-print l_15[a:b:2],' - est ...............................' # <------------------------------- YOUR CODE HERE
+print l_15[a],       '   ' # <------------------------------- YOUR CODE HERE
+print l_15[a:b],  ' -  tout les objet de la liste de a a b ' # <------------------------------- YOUR CODE HERE
+print l_15[:b],   ' -  tout les objet de la liste jusque b' # <------------------------------- YOUR CODE HERE
+print l_15[b:],   ' -  tout les objet de la liste de b jusque la fin de la liste' # <------------------------------- YOUR CODE HERE
+print l_15[::3],  ' -  tout les objet de la liste a chaque 3 element de la liste ' # <------------------------------- YOUR CODE HERE
+print l_15[a:b:2],' -  tout les objet de la liste chaque 2 de la liste de a a b' # <------------------------------- YOUR CODE HERE
 
 
 
