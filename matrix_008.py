@@ -7,11 +7,11 @@ l = ['Dasha', 'Chekeres', '13 ans', 'femelle', 'blonde']
 # Imagine t'as une application ou t'as besoin des variables pour chaque element de la liste
 # * voir exercise #4 dans matrix_007 (voir 007.4)
 ################################################# YOUR CODE HERE
-prenom = ''
-nom = ''
-age = ''
-sexe = ''
-couleur = ''
+prenom = l[0]
+nom = l[1]
+age = l[2]
+sexe = l[3]
+couleur = l[4]
 ################################################# END OF YOUR CODE
 print 'mon prenom   : ', prenom
 print 'mon nom      : ', nom
@@ -41,7 +41,7 @@ les_filles = [ ['Dasha', 'Chekeres', '13ans'], ['Masha', 'Mekeres', '14ans'], ['
 # * tu dois utiliser le Unpacking
 # * voir matrix_006, exercise #2 (c'est pas pareil, mais ca doit t'aider)
 ######################################################## YOUR CODE HERE
-les_filles_str = []
+les_filles_str =[x+' '+z+' '+y for x,z,y in les_filles ]
 ######################################################## END OF YOUR CODE
 print 'Les filles :', les_filles_str
 
@@ -52,6 +52,6 @@ print 'Les filles :', les_filles_str
 l_1 = [ ['a','x'], ['b','y'], ['c','z'] ]
 # tu dois obtenir l_2 = [ 'ax', 'by', 'cz']
 ######################################################## YOUR CODE HERE
-l_2 = []
+l_2 = [x+y for x,y in l_1]
 ######################################################## END OF YOUR CODE
 print 'xyz = ', l_2
