@@ -34,7 +34,7 @@ une_dict = {'prenom' : 'Dasha', 'nom' : 'Chekeres', 'age' : 13 }
 # la 2eme cle: 'nom',    la 2eme valeur: 'Chekeres'
 # En fait, c'est pas corect. On peux pas dir 1ere et 2eme parse que le dict.
 # est une collection non-ordonnee,
-une_autre_coll_non_ordonee_que_tu_connais_est = '' # ecris 'list' ou 'set'   ### YOUR CODE HERE
+une_autre_coll_non_ordonee_que_tu_connais_est = {'a':2,'s':'e'}# ecris 'list' ou 'set'   ### YOUR CODE HERE
 print 'Non-ordonnee: ', une_autre_coll_non_ordonee_que_tu_connais_est
 
 # 2. (~5')
@@ -46,8 +46,8 @@ mon_dict = dict()
 # Rajoute 2 elements dans mon_dict
 # La valeur de la 1ere element est mon nom,    (la cle a ton choix)
 # La valeur de la 2eme element est mon prenom, (la cle a ton choix)
-mon_dict[...] = ...   ### YOUR CODE HERE
-mon_dict[...] = ...   ### YOUR CODE HERE
+mon_dict['nom'] ='Pashnin'   ### YOUR CODE HERE
+mon_dict['prenom'] = 'Andrey'   ### YOUR CODE HERE
 print "Mon dictionnaire: ", mon_dict
 # * controle-toi: le print de la ligne precedents doit imprimer:
 # Mon dictionnaire:  {'nom': 'Pashnin', 'prenom': 'Andrey'}
@@ -56,8 +56,8 @@ print "Mon dictionnaire: ", mon_dict
 # Si tu veux lire une valeur qui correspond a une cle,
 # utilise juste la fonction [ ]
 # Definis le deux variables suivante en utilisant mon_dict:
-sensei_nom    = 0  ### YOUR CODE HERE
-sensei_prenom = 0  ### YOUR CODE HERE
+sensei_nom =mon_dict['nom'] ### YOUR CODE HERE
+sensei_prenom = mon_dict['prenom']  ### YOUR CODE HERE
 print "Mon sensei: nom = ", sensei_nom, ", prenom = ", sensei_prenom
 # * controle-toi: le print de la ligne precedents doit imprimer:
 # Mon sensei: nom =  Pashnin , prenom =  Andrey
