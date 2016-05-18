@@ -54,7 +54,7 @@ print l_15[a:b:2],' -  tout les objet de la liste chaque 2 de la liste de a a b'
 # 5. Pas obligatoire. Si tu trouve une solution: +3 heurs d'ordinateur supplementaires
 
 # En utilisant les liste d'exercise #3 - l2 et l3
-# cree une nouvelle liste chaque element duquelle est une somme
+# cree une nouvelle liste chaque element du quelle est une somme
 # des elements correspondants des list l2 et l3
 # C'est a dire, tu dois construire la liste [11, 22, 33, 44] ou 11 = 1+10, 22=2+20, ...
 # 
@@ -64,5 +64,5 @@ print l_15[a:b:2],' -  tout les objet de la liste chaque 2 de la liste de a a b'
 # * le fait que 10 est l3[0], 20 est l3[2], 30 est l3[2], ...
 # * le fait que l2[i] = 1 et l3[i] = 10  quand i = 0
 # * rappelle que tu peut construire une list [0,1,2,3] avec: range( len(l2) )
-l_somme_l2l3 = [] # <------------------------------ YOUR CODE HERE
+l_somme_l2l3 = {x+y for x in l2 for y in l3} # <------------------------------ YOUR CODE HERE
 print '\n!5. La liste des sommes: ', l_somme_l2l3
