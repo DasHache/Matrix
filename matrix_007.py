@@ -57,12 +57,13 @@ print l_15[a:b:2],' -  tout les objet de la liste chaque 2 de la liste de a a b'
 # cree une nouvelle liste chaque element du quelle est une somme
 # des elements correspondants des list l2 et l3
 # C'est a dire, tu dois construire la liste [11, 22, 33, 44] ou 11 = 1+10, 22=2+20, ...
-# 
+l2 = [1,2,3,4,5]
+l3 = [10,20,30,40,50]
 # * Ca peut t'aider:
 # * le truc que t'as fait avec les sets dans matrix_006, exercise 4.
 # * le fait que 1  est l2[0],  2 est l2[1],  3 est l2[2], ...
-# * le fait que 10 est l3[0], 20 est l3[2], 30 est l3[2], ...
+# * le fait que 10 est l3[0], 20 est l3[1], 30 est l3[2], ...
 # * le fait que l2[i] = 1 et l3[i] = 10  quand i = 0
 # * rappelle que tu peut construire une list [0,1,2,3] avec: range( len(l2) )
-l_somme_l2l3 = {x+y for x in l2 for y in l3} # <------------------------------ YOUR CODE HERE
+l_somme_l2l3 = [l2[x]+l3[x] for x in range(len(l2))]
 print '\n!5. La liste des sommes: ', l_somme_l2l3

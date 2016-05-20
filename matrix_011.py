@@ -22,7 +22,7 @@ print '--------------------------------------------------'
 # Reponds sur chaque question avec 2 mots (pas plus):
 # - quelle est la difference entre la ligne 1.1 et la ligne 1.2 ?
 print 'Diff entre [x*y for x,y in ll] et {x*y for x,y in ll} est = ', '1 est une list 2 est un set'
-# - pourquoi la ligne 1.2 produit un set, mais 1.3 produit une liste ? 
+# - pourquoi la ligne 1.2 produit un set, mais 1.1 produit une liste ?
 print 'Parse que ', 'a causedes{} et aussi parce que 1.3 n est pas une list mais un dict '
 # - quelle est la difference entre la ligne 1.2 et la ligne 1.3 ?  tu t est trompe
 print 'Diff entre {x*y for x,y in ll} et {x:y for x,y in ll} est = ', 'l un est un dict l autre un set'
@@ -44,8 +44,8 @@ print 'dict = ', comprehension_dict
 print '--------------------------------------------------'
 # A reflechir:
 # - quelle est la difference entre la ligne 1.1 et la ligne 2.1 ?
-print 'Diff entre [x*y for x,y in ll] et [x*y for x in lx for y in ly] est = ', 'dans 1 tt les objet se trouvent dans une seule list alors que dans 2 non'
-
+print 'Diff entre [x*y for x,y in ll] et ' \
+      '           [x*y for x in lx for y in ly] est = ',
 
 # 3. (~5')
 # Cree un dict les cles duquel sont les chiffres de 0 a 9,
@@ -55,7 +55,7 @@ print 'Diff entre [x*y for x,y in ll] et [x*y for x in lx for y in ly] est = ', 
 # * utilise la fonction range(10)
 # * tu dois comprendre que une cle d'un dict peux etre un entier (un chiffre)
 #   le cle ce n'est PAS TOUJOURS une chaine des characteres (a string)
-dict_carrees ={0:0,1:1,2:4,3:9,4:16,5:25,6:36,7:49,8:64,9:81}
+dict_carrees ={x:x*x for x  in range(10)}
 print 'Dictionnaire des carrees: ', dict_carrees
 
 
