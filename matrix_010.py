@@ -22,7 +22,7 @@ print 'Acteurs remplacants: ', rj_remp
 # Ca devient plus complique...
 # Cree un troisieme dict qui contient le deux dict precedents - comme les valeur
 # et les cles sont a ton choix
-d_cast={"key":rj,"tic":rj_remp}   ## <------------------------------------------------- "YOUR CODE HERE"
+d_cast={"princ":rj,"remp":rj_remp}   ## <------------------------------------------------- "YOUR CODE HERE"
 print 'Les deux trouppes: ', d_cast
 
 # 5. 
@@ -32,14 +32,14 @@ print 'Romeo est: ', acteur_romeo
 
 # 6.
 # En utilisant le dict d_cast, imprime le nom du remplacant pour le role de Juliet
-acteur_juliet = rj_remp['juliette'] ## <----------------------------------------------------- "YOUR CODE HERE"
+acteur_juliet =d_cast['juliette']=['dasha2']## <----------------------------------------------------- "YOUR CODE HERE"
 print 'Deuxieme Juliet est: ', acteur_juliet
-
 # 7.
 # Imagine que la famille d'un des acteurs principale vient de demenager
 # et vous avez trouve un autre garcon pour ce role
 # Corrige le dict d_cast pour qu'il soit juste
-d_cast['romeo']='lol'  ## <--------------------------------------------------------------------------- "YOUR CODE HERE"
+d_cast['romeo']=['danya']
+d_cast['romeo']=['lom']
 print 'Le nouveau trouppe est: ', d_cast
 
 
