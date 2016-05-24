@@ -6,19 +6,19 @@
 # Qu'est-ce que c'est La Comprehension? 
 print 'La comprehension est: ', 'C est une expression sous la forme de [ ... for ... in ... ]'
 # Donne-moi un example de une comprehension
-print '  example = ', '[ x * y  for x,y in ll])'
+print '  example = ', '{x*y for x in {1,2,3,4} for y in {5,6,7}}'
 
 # 2.
 # Qu'est-ce que c'est le 'unpacking'
 print 'Le unpacking est: ', 'on peuxt traduire par le terme de deballage'
 # Donne-moi un example...
-print '  example = ', 'p, n, a, s, c = l'
+print '  example = ', ''
 
 # 3.
 # Qu'est-ce que c'est la liste
 print 'La liste est: ', 'c est comme des/un objet dans des/une boite '
 # Donne-moi un example...
-print '  example = ', '[g,f,d,s,g,r]'
+print '  example = ', '[1,2,3,4,5]'
 
 # 4.
 # Qu'est-ce que c'est le set
@@ -30,7 +30,7 @@ print '  example = ', '{1,2,3,4,5,6,8}'
 # Qu'est-ce que c'est le dictionnaire
 print 'Le dict est: ', 'comme un set mais que avec des paires'
 # Donne-moi un example...
-print '  example = ', '{prenom : Dasha, nom : Chekeres, age : 13 }'
+print '  example = ', '{1 : 2, 4: 3,9 : 13 }'
 
 
 
