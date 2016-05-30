@@ -13,17 +13,39 @@ import sys
 # T'as un dict des dicts:
 dict_au = {  0 : {'name' : 'Neutral face',      'muscles' : 'pas de muscles qui travaillent'     },
              1 : {'name' : 'Inner Brow Raiser', 'muscles' : 'frontalis (pars medialis)'          },
-             6 : {'name' : 'Cheek Raiser',      'muscles' : 'orbicularis oculi (pars orbitalis)' },
-            12 : {'name' : 'Lip Corner Puller', 'muscles' : 'zygomaticus major'                  }
+             2 : {'name' : 'Outer Brow Raiser', 'muscles' : 'frontalis (pars lateralis)'         },
+             4 : {'name' : 'Brow Lowerer'     ,      'muscles' : 'depressor glabellae, depressor supercilii, corrugator supercilii'},
+             5 : {'name' : 'Upper Lid Raiser' , 'muscles' : 'levator palpebrae superioris, superior tarsal muscle'},
+             6 : {'name' : 'Cheek Raiser'     ,      'muscles' : 'orbicularis oculi (pars orbitalis)' },
+             7 : {'name' : 'Lid Tightener'    , 'muscles' : 'orbicularis oculi (pars palpebralis)' },
+             8 : {'name' : 'Lips Toward Each Other' , 'muscles' : 'orbicularis oris' },
+             9 : {'name' : 'Nose Wrinkler'    , 'muscles' : 'levator labii superioris alaeque nasi' },
+            10 : {'name' : 'Upper Lip Raiser' , 'muscles' : 'levator labii superioris, caput infraorbitalis' },
+            11 : {'name' : 'Nasolabial Deepener' , 'muscles' : 'zygomaticus minor' },
+            12 : {'name' : 'Lip Corner Puller', 'muscles' : 'zygomaticus major'                  },
+            13 : {'name' : 'Sharp Lip Puller' , 'muscles' : 'levator anguli oris (also known as caninus)' },
+            14 : {'name' : 'Dimpler'          , 'muscles' : 'buccinator' },
+            15 : {'name' : 'Lip Corner Depressor' , 'muscles' : 'depressor anguli oris (also known as triangularis)' },
+            16 : {'name' : 'Lower Lip Depressor' , 'muscles' : 'depressor labii inferioris' },
+            17 : {'name' : 'Chin Raiser'      , 'muscles' : 'mentalis' },
+            18 : {'name' : 'Lip Pucker'       , 'muscles' : 'incisivii labii superioris and incisivii labii inferioris' },
+            19 : {'name' : 'Tongue Show'      , 'muscles' : '' },
+            20 : {'name' : 'Lip Stretcher'    , 'muscles' : 'risorius w/ platysma' },
+            21 : {'name' : 'Neck Tightener'   , 'muscles' : 'platysma' },
+            22 : {'name' : 'Lip Funneler'     , 'muscles' : 'orbicularis oris' },
+            23 : {'name' : 'Lip Tightener'    , 'muscles' : 'orbicularis oris' },
+            24 : {'name' : 'Lip Pressor'      , 'muscles' : 'orbicularis oris' },
+            25 : {'name' : 'Lips Part'        , 'muscles' : 'depressor labii inferioris, or relaxation of mentalis or orbicularis oris' },
+            26 : {'name' : 'Jaw Drop'         , 'muscles' : 'masseter; relaxed temporalis and internal pterygoid' }
           }
 
 emo_happy    = [6, 12]
 emo_sad      = [1, 4, 15]
-emo_surprise = []
+emo_surprise = [1,2,5,26]
 emo_fear     = [1, 2, 4, 5, 7, 20, 26]
 emo_anger    = [4, 5, 7, 23]
 emo_disgust  = [9, 15, 16]
-emo_contempt = []
+emo_contempt = [12,14]
 
 
 def get_muscles(emo):
