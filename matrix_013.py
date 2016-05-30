@@ -53,12 +53,22 @@ def get_muscles(emo):
         print '  muscle: ', dict_au[au]['muscles']
 
 def emotion2emo(emotion):
-    global emo_happy, emo_sad
+    global emo_happy, emo_sad,emo_surprise,emo_fear,emo_anger,emo_disgust,emo_contempt
 
     if emotion == 'happy':
         return emo_happy
     if emotion == 'sad':
         return emo_sad
+    if emotion == 'surprise':
+        return emo_surprise
+    if emotion == 'fear':
+        return emo_fear
+    if emotion == 'anger':
+        return emo_anger
+    if emotion == 'disgust':
+        return emo_disgust
+    if emotion == 'contempt':
+        return emo_contempt
     else:
         return []
         
