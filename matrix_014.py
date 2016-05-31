@@ -20,8 +20,7 @@ l_9paires = [ [x,y] for x in une_liste for y in range(3)]
 # En utilisant le meme liste 'une_liste'
 # cree une autre liste qui contient juste trois paires:
 # [ ('a', 0), ('b', 1), ('c', 2) ]
-l2 = range(3)
-l_3paires = [  [une_liste[x],l2[x] ]   for x in range(3)]
+l_3paires = [  [une_liste[x],range(3)[x] ]   for x in range(3)]
 
 # 3.
 # Cree un dictionnaire de 3 elements:
@@ -44,8 +43,7 @@ d_3elem = { une_liste[x]:l_3paires[x] for x in range(3)}
 # * tu ne utilise pas Le Comprehension
 # * tu utilise zip()
 # * tu utilise range()
-l_3paires_zip = [zip(une_liste,l_3paires)]
-range(3)
+l_3paires_zip = zip(une_liste,range(3))
 
 
 
