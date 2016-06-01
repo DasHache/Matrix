@@ -1,14 +1,14 @@
-# nom: ActionUnit
-class ActionUnit :
+from au_dict import au_dict
 
-
-    def __init__(self,  id_):
-        self.id = id_
-
+class ActionUnits :
+    dict = au_dict
+    
+    def __init__(self):
+        pass
 
     def __str__(self):
-        return str(self.id)
+        return str(self.dict)
 
-au = ActionUnit(666)
-
-print au
+    def __getitem__(self, index):
+        return self.dict[index]
+        
