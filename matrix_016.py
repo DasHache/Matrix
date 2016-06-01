@@ -55,13 +55,12 @@ class Emotion:
     def __str__(self):
         # Remplace la valeur que la fonction __str__ retourne
         # pour que ca soit plus jolie
-        la_chaine_de_char_qui_je_retourne = 'le nom de mon emotion ici!!   ' + self.name  ### <--- TON CODE ICI: 
-        return la_chaine_de_char_qui_je_retourne 
+        return  self.name+'qqqq'  ### <--- TON CODE ICI:
 
 # Cree une variable de ton type 'Emotion' (de ta classe 'Emotion')
 e2 = Emotion('happy')
 # Essai d'imprimer cette emotion:
-print 'Ma emotion: ', e2  ### <-------- essai dans Python Console pour voir ce que ca donne
+print 'Mon emotion: ', e2  ### <-------- essai dans Python Console pour voir ce que ca donne
 print 'Le nom de mon emotion: ', e2.name  ### <-------- essai dans Python Console pour voir ce que ca donne
 
 # 

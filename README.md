@@ -18,3 +18,6 @@ https://en.wikipedia.org/wiki/Facial_Action_Coding_System
 
 1. Les collections. 9. Rappelle 2
 2. Zip()
+#matrix15
+[x+1 for x in L]
+[L[x]+1 for x in range(3)]
