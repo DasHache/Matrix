@@ -22,15 +22,18 @@ def multiply_by_2(x) :
 # Tu peux utiliser (appeler) cette fonction:
 y = multiply_by_2(10)
 # On vient de creer une variable 'y'
-# et assigner une valuer (qui est retourne par la fonction) a cette variable 'y'
+# et assigner une valeur (qui est retourne par la fonction) a cette variable 'y'
 
 # 1.
 # Definir une fonction:
 # nom (de la fonction)         : plus1
 # input (ce qu'elle prend)     : c'est une entier, X
-# output (ce qu'elle retourne) : c'est une autre entier, qui est 1 plus grande (+1) que
+# output (ce qu'elle retourne) : c'est une autre entier, qui est augmentee de 1 (+1) que
 #                                l'entier d'input
 # <--- TON CODE ICI
+def plus1(x) :
+    return x+1
+
 # <--- TON CODE ICI
 
 
@@ -41,24 +44,26 @@ L = [1,2,3]
 # est 1 plus grand que l'element correspondant de la liste L
 # Tu dois obtenir une liste Lp1 = [2,3,4]
 # * tu peux utiliser le comprehension
-Lp1 = []
+Lp1 = [L[x]+1 for x in range(3)]
 
-
+[x+1 for x in L]
 
 # 3.
 # Definir une fonction 'nextInts(L)' 
 # son INPUT (ce qu'elle prend):     c'est une liste, L
 # son OUTPUT (ce qu'elle retourne): c'est une autre liste, chaque element de la quelle
-# est plus grande (+1) que l'element correspondant de la liste L
+# est plus grande de (+1) que l'element correspondant de la liste L
 # C'est a dire, si tu la donne une liste [1,2,3] elle doit retourner [2,3,4]
 # * tu va utiliser Le Comprehension
 # <--- TON CODE ICI
+def nextInts(L) :
+    return [x+1 for x in L]
 # <--- TON CODE ICI
 
 # 3.2
 # Utilise ta fonction 'nextInts' avec un argument a ton choix
 # <--- TON CODE ICI
-
+nextInts([2,3,4,5])
 
 # 4.
 # Definir une fonction:
@@ -67,12 +72,14 @@ Lp1 = []
 # - output : une liste, chaque element de la quelle est une cube d'element correspondant de la list L
 # - example: input [1,2,3], output [1, 8, 27]
 # <--- TON CODE ICI
+def cubes(L) :
+    return [x*x*x for x in L]
 # <--- TON CODE ICI
 
 # 4.2
 # Utilise ta fonction 'cubes' avec un argument a ton choix
 # <--- TON CODE ICI
-
+cubes([2,3,4])
 
 
 
