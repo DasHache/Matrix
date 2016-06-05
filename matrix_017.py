@@ -34,31 +34,24 @@
 #            comme ca: objet.methode()
 # Ca doit imprimer la phrase 'JE NE SAIS PAS CE QUE JE PARLE'
 
-
-
-
-
-
-
-
-
-
-
-
 ############################################# TON CODE ICI #############
 
 class Animal :
 
     def __init__(self, nom):
         self.name = nom
+
     def __str__(self):
         return  self.name
+        
     def __parle__(self):
         return 'JE NE SAIS PAS CE QUE JE PARLE'
+
+        
 a = Animal('JE NE SAIS PAS MON NOM')
 a.__parle__()
 
-
+print a
 print a.__parle__()
 
 
