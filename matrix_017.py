@@ -36,23 +36,43 @@
 
 ############################################# TON CODE ICI #############
 
+
 class Animal :
 
-    def __init__(self, nom):
-        self.name = nom
+    def __init__(self):
+        self.nom = "JE NE SAIS PAS MON NOM"
 
     def __str__(self):
-        return  self.name
+        return  self.nom
         
-    def __parle__(self):
-        return 'JE NE SAIS PAS CE QUE JE PARLE'
+    def parle(self):
+        return 'JE NE SAIS PAS CE QUE JE DIS'
 
-        
-a = Animal('JE NE SAIS PAS MON NOM')
-a.__parle__()
-
+a = Animal()
 print a
-print a.__parle__()
+print a.parle()
 
 
+class Cat(Animal) :
+    def __init__(self):
+        self.nom = "un chat"
+
+    def parle(self):
+        return 'miaou miaou'
+
+class Dog(Animal) :
+    def __init__(self):
+        self.nom = "un chien"
+
+    def parle(self):
+        return 'gggg'
+
+
+
+c = Cat()
+print c
+print c.parle()
+
+d = Dog()
+print d.parle()
 ########################################################################
